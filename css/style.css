@@ -102,14 +102,16 @@ p {
 
 main ul {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 30px;
+    list-style-type: circle;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
 
 main ol {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 30px;
+    list-style-type: lower-alpha;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
 }
@@ -126,8 +128,7 @@ main ol {
 
 .grid-pets img {
     padding: 3%;
-    width: 100%;
-    height: auto;
+    width: auto;
 }
 
 .horizontal {
@@ -144,4 +145,8 @@ main ol {
     border: 3px solid #5aa0c1;
     border-top-right-radius: 20px;
     padding: 3%;
+}
+
+.grid-travel img {
+    width: auto;
 }

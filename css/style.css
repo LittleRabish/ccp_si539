@@ -119,13 +119,15 @@ main ol {
     grid-template-columns: 1fr 1fr;
     margin: 3%;
     border: 3px solid #5aa0c1;
-    border-top-right-radius: 30px;
+    border-top-right-radius: 20px;
     justify-items: center;
     align-items: center;
 }
 
 .grid-pets img {
     padding: 3%;
+    width: 100%;
+    height: auto;
 }
 
 .horizontal {
@@ -140,6 +142,6 @@ main ol {
     justify-items: center;
     margin: 3%;
     border: 3px solid #5aa0c1;
-    border-top-right-radius: 30px;
+    border-top-right-radius: 20px;
     padding: 3%;
 }

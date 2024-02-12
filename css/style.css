@@ -128,7 +128,8 @@ main ol {
 
 .grid-pets img {
     padding: 3%;
-    width: auto;
+    width: 100%;
+    height: auto;
 }
 
 .horizontal {
@@ -148,5 +149,6 @@ main ol {
 }
 
 .grid-travel img {
-    width: auto;
+    width: 100%;
+    height: auto;
 }

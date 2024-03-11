@@ -1,3 +1,7 @@
+body {
+    background-color: #ffffe3;
+}
+
 a:link {
     text-decoration: underline;
     color: blue;
@@ -8,11 +12,33 @@ a:visited {
     color: purple;
 }
 
+/* skip to main */
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+}
+
+.skip:focus {
+    /* position: static; */
+    width: auto;
+    height: auto;
+    left: 10px;
+    border: solid 2px black;
+}
 
 /* navigation bar */
 nav {
     padding: 0 3%;
     background-color: #e4ee60;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 nav li {
@@ -39,26 +65,8 @@ nav li {
 /* main */
 main {
     padding: 0 5%;
-    background-color: #ffffe3;
+    margin-top: 40px;
 }
-
-.skip {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    display: block;
-    text-align: center;
-}
-
-.skip:focus {
-    position: static;
-    width: auto;
-    height: auto;
-}
-
 
 h1 {
     font-size: xx-large;
@@ -119,7 +127,8 @@ main ol {
 .grid-pets {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 3%;
+    margin: 3% 0;
+    justify-content: space-evenly;
     border: 3px solid #5aa0c1;
     border-top-right-radius: 20px;
     justify-items: center;
@@ -128,7 +137,7 @@ main ol {
 
 .grid-pets img {
     padding: 3%;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
@@ -139,13 +148,12 @@ main ol {
 .grid-travel {
     display: grid;
     /* width: 90%; */
-    /* justify-content: center; */
     grid-template-columns: auto;
-    justify-items: center;
-    margin: 3%;
+    margin: 3% 0;
     border: 3px solid #5aa0c1;
     border-top-right-radius: 20px;
     padding: 3%;
+    justify-items: center;
 }
 
 .grid-travel img {
@@ -153,9 +161,59 @@ main ol {
     height: auto;
 }
 
+.flex-recipes {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin: 3% 0;
+    border: 3px solid #5aa0c1;
+    border-top-right-radius: 20px;
+    padding: 3%;
+}
+
+.flex-recipes img {
+    width: auto;
+    height: 250px;
+}
+
 @media (prefers-reduced-motion) {
     .animated {
         /* visibility: hidden; */
         display: none;
     }
+}
+
+
+/* Tablet View */
+@media screen and (min-width: 768px) {
+    /* h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    nav, h3, p {
+        font-size: 1.5em;
+    } */
+
+    img, video {
+        max-width: 400px;
+        max-height: 400px;
+        width: auto;
+        height: auto;
+    }
+
+    .grid-travel img {
+        width: auto;
+        height: auto;
+    }
+
+    .grid-travel {
+        grid-template-columns: 2fr 1fr;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
 }

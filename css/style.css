@@ -162,6 +162,10 @@ main ol {
     height: auto;
 }
 
+.grid-travel p {
+    padding: 3%;
+}
+
 .flex-recipes {
     display: flex;
     flex-direction: row;
@@ -200,8 +204,8 @@ main ol {
     } */
 
     img, video {
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 360px;
+        max-height: 360px;
         width: auto;
         height: auto;
     }
@@ -217,4 +221,34 @@ main ol {
         align-items: center;
     }
 
+}
+
+/* Desktop View */
+@media screen and (min-width: 1008px) {
+    .gallery-pets {
+        text-align: center;
+    }
+
+    .grid-pets {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-travel {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-travel p {
+        grid-column: 2 / 4;
+    }
+
+    .grid-travel:nth-child(2n+1) p {
+        grid-column: 1 / 3;
+    }
+    
+    .grid-travel:nth-child(2n+1) img {
+        grid-column: 3 / 4;
+        order: 3;
+    }
 }

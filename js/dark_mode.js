@@ -1,7 +1,7 @@
 document.getElementById("dark").addEventListener("click", function() {
     document.body.classList.toggle("dark-mode");
     document.querySelectorAll(
-        "h2, h3, .grid-travel, .grid-pets, .flex-recipes, .active, #nav .active a"
+        "h2, h3, .grid-travel, .grid-pets, .flex-recipes, .active, #nav .active a, a:link, a:visited"
     ).forEach(function(heading) {
         heading.classList.toggle("dark-mode");
     });

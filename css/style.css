@@ -103,6 +103,14 @@ h2.dark-mode, h3.dark-mode {
     border: 3px solid #bfe38a;
 }
 
+a:link.dark-mode {
+    color: #bfe38a;
+}
+
+a:visited.dark-mode { 
+    color: #e4ee60;
+}
+
 /* main */
 main {
     padding: 40px 5% 0;

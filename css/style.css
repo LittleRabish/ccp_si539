@@ -2,6 +2,10 @@ body {
     background-color: #ffffe3;
 }
 
+a:hover, a:focus, button:hover, button:focus {
+    font-weight: bold;
+}
+
 a:link {
     text-decoration: underline;
     color: blue;
@@ -62,6 +66,42 @@ nav li {
     background-color: #ffffe3;
 }
 
+/* dark mode */
+button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    border: solid black;
+    border-radius: 6px;
+    color: #ffffe3;
+}
+
+button.dark-mode {
+    background-color: #ffffe3;
+    color: black;
+}
+
+.active.dark-mode {
+    background-color: black;
+}
+
+#nav .active a.dark-mode {
+    color: #ffffe3;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: #ffffe3;
+}
+
+h2.dark-mode, h3.dark-mode {
+    color: #e4ee60;
+}
+
+.grid-pets.dark-mode, .grid-travel.dark-mode, .flex-recipes.dark-mode {
+    border: 3px solid #bfe38a;
+}
 
 /* main */
 main {
@@ -246,7 +286,7 @@ main ol {
     .grid-travel:nth-child(2n+1) p {
         grid-column: 1 / 3;
     }
-    
+
     .grid-travel:nth-child(2n+1) img {
         grid-column: 3 / 4;
         order: 3;
